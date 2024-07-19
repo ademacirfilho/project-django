@@ -10,5 +10,11 @@
     <h1>Meu belissimo site</h1>
 
     <p>Sites são feitos assim</p>
+
+    <ul>
+        {% for usuario in usuarios %}
+            <li>{{ usuario.nome }}: {{ usuario.idade }}</li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
